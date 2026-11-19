@@ -6,8 +6,6 @@
 
 ## 一条命令安装到 Codex
 
-**本仓库尚未发布。下面 `YOUR_NAME/YOUR_REPO` 是占位符，上传后替换为真实仓库名再复制命令。** 不需要发布npm包。
-
 使用第三方开源 Skills CLI（当前公开文档要求 Node.js 22.20+、npm/npx；Git克隆路径还需Git）：
 
 ```sh
