@@ -6,10 +6,12 @@
 
 ## 一条命令安装到 Codex
 
+**本仓库已发布到 https://github.com/TokiManaSearl/us-modern-localization 。** 不需要发布npm包。
+
 使用第三方开源 Skills CLI（当前公开文档要求 Node.js 22.20+、npm/npx；Git克隆路径还需Git）：
 
 ```sh
-npx skills add YOUR_NAME/YOUR_REPO --skill us-modern-localization -a codex -g --copy -y
+npx skills add TokiManaSearl/us-modern-localization --skill us-modern-localization -a codex -g --copy -y
 ```
 
 `-g` 安装到用户级、`--copy` 使用普通副本、`-y` 跳过确认。不要与别的同名技能混装：第三方工具可能覆盖同名安装，已有修改先备份；首次可去掉 `-y` 交互确认。安装命令会联网下载第三方CLI及仓库，不执行本仓库内小说内容，不会自动装Word运行依赖。隐私要求较高时用下面离线安装。
@@ -24,7 +26,7 @@ $us-modern-localization
 也可直接告诉支持 skill-installer 的 Codex：
 
 ```text
-请安装 https://github.com/YOUR_NAME/YOUR_REPO/tree/main/skills/us-modern-localization 中的技能。
+请安装 https://github.com/TokiManaSearl/us-modern-localization/tree/main/skills/us-modern-localization 中的技能。
 ```
 
 安装目录由所用工具决定；Codex官方安装器文档默认 `$CODEX_HOME/skills`，未设置时 `~/.codex/skills`；第三方Skills CLI可能使用共享技能目录。不要重复安装两套副本。
@@ -93,12 +95,12 @@ skills/us-modern-localization/
 
 1. 新建空仓库，建议名 `us-modern-localization`；是否公开由你决定。不要上传整个工作台项目。
 2. 将本目录**里面的内容**放到仓库根，确保路径是 `skills/us-modern-localization/SKILL.md`，不要多套一层 `github/`。
-3. 将本README中的 `YOUR_NAME/YOUR_REPO` 替换为真实值。默认分支不是main时，也修改自然语言安装链接里的分支。
+3. 确认本README中的安装链接指向真实仓库 `TokiManaSearl/us-modern-localization`。默认分支不是main时，也修改自然语言安装链接里的分支。
 4. 运行测试：`python -B -m unittest discover -s tests -v`。在新的临时技能父目录用 `--dest` 安装一次。
 5. 用一个干净Codex会话验证发现技能、读取引用、生成两份Word；再检查WPS导航。不要把本地测试当作已完成远程安装验证。
 6. 保留所有许可证与第三方声明，核对版权归属后再发布。许可选项本次由AI自动代答选MIT，不是对版权归属的证明。
 
-维护者也可用GitHub网页的 Upload files 上传目录内容，或在本目录自行git init、提交并推送；本交付尚未创建仓库、推送或发布。
+维护者也可用GitHub网页的 Upload files 上传目录内容，或在本目录自行git init、提交并推送；本仓库已创建并推送至 https://github.com/TokiManaSearl/us-modern-localization （默认分支 `main`）。
 
 ## 来源与许可
 
