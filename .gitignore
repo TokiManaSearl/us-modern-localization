@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+.env.*
+.localization-work/
+工作记录/
+交付/
+制作资料/
+*.docx
+*.pdf
+.DS_Store
